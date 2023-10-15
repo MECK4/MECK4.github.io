@@ -78,7 +78,7 @@ h1 {font-family: HeaderTextFont;}
 .text h1 {
     margin:0;
     font-size: 5vw;
-    line-height: 4.5vw;
+    line-height: 60px;
     overflow-y: hidden;
     
 }
@@ -185,6 +185,9 @@ br {
         display:inline-block;
         zoom: 2;
         padding-left: 2.4vw;
+    }
+    .text h1 {
+        line-height: 20px;
     }
     button {
         margin-bottom: 2vw;
