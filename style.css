@@ -1,234 +1,166 @@
 * {
+    color: white;
     overflow-x: hidden;
 }
-body {
-    margin: 0;
-    padding: 0;
-    overflow-y:visible;
-}
+
 .background-image {
     position: fixed;
-    background: url(background-dam-website.jpg);
-    background-size: cover;
+    background-image: url(images/background-dam-website.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 150vh;
     z-index: -1;
-    
 }
-
 .top {
-    display: flex;
-    padding-left: 4.8vw;
-    padding-right: 4.8vw;
-    padding-top: 1vw;
-    padding-bottom: 3vw;
-    justify-content: space-around;
+    padding: 2vw;
 }
 .top img {
     width: 25vw;
-    border-radius: 5px;
 }
-nav {
-    font-variant: small-caps;
-    margin-top: 15px;
+a {
+    font-size: 1.8vw;
     color: white;
-    user-select: none;
-}
-nav a{
-    font-size: 25px;
-    text-decoration: none;
     cursor: pointer;
 }
-#dropDownOffers {
-    display: none;
-    position: absolute;
-    translate: -55px;
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
-    padding: 15px;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-#dropDownOffers a {
-    display: inherit;
-    cursor: pointer;
-    font-size: 20px;
+a:hover {
     color: white;
-}
-#dropDownOffers a:hover {
-    text-decoration: underline;
-}
-.align-everything {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-around;
-    overflow-y: hidden;
-}
-.informations {
-    padding-top:6vw;
-    padding-bottom:6vw;
-}
-.text {
-    color: white;
-    width: 40vw;
-    overflow-y: hidden;
-}
-h1 {font-family: HeaderTextFont;}
-.text h1 {
-    margin:0;
-    font-size: 5vw;
-    line-height: 60px;
-    overflow-y: hidden;
-    
-}
-.text p {
-    font-family: ParagraphTextFont;
-    font-size: 1.6vw;
 }
 
-.text button {
-    padding: 1.5vw 5vw 1.5vw 5vw;
-    border-radius: 120px;
-    border: 0;
-    font-size: 1.5vw;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.336);
-    cursor: pointer;
+.offers
+{
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(10px);
+    padding: 15vw 3vw;
 }
-.text button:hover {
-    background-color: rgba(0,0,0, 0.5);
-}
-.image,
-.image img {
-    width: 45vw;
-    border-radius: 5px;
-}
-
-.packets{
-    width: 100%;
-    padding: 12vw 0 12vw 0;
-    background-color: rgba(0, 0, 0, 0.301);
-    backdrop-filter: blur(15px);
-}
-footer {
-    color: white;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-footer .social-media-links {
-    display:inline-flex;
-    width: 20vw;
-    height: 3vw;
-    justify-content: space-between;
-    margin: 0.8vw 0 0.8vw 0;
-}
-footer .social-media-links a{
+h1{
+    font-family: HeaderFont;
+    font-size: 7vw;
+    padding: 2vw 0;
+    line-height: 6vw;
     overflow: hidden;
 }
-footer .social-media-links img{
-    width: 3vw;
-    cursor: pointer;
+p{
+    font-family: ParagraphFont;
+    font-size: 2vw;
+    overflow: hidden;
 }
-footer .copyright-text {
+button {
+    background-color: rgba(0, 0, 0, 0.267);
+    border: 0;
+    padding: 1.5vw 4vw;
     font-size: 1.5vw;
+    border-radius: 220px;
+    overflow: hidden;
+    margin-top: 2vw;
+}
+button:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.offers img{
+    width: 50vw;
 }
 
-.invert {
+a img {
+    width: 3vw;
+    margin: 0 2vw;
+}
+
+.copyright {
+    padding:0;
+    text-align: right;
+}
+
+.dropdown {
+    font-size: 2vw;
+    padding: 0;
+    background: none;
+}
+#offers-menu {
+    display: none;
+    position: absolute;
+    top: 5vw;
+    right: 10vw;
+    background-color: rgba(0, 0, 0, 0.466);
+    backdrop-filter: blur(10px);
+    list-style-type: none;
+    padding: 1.5vw;
+    border-radius: 20px;
+}
+#offers-menu li {
+    width: 15vw;
+}
+
+.desktop-reverse
+{
+    display: flex;
     flex-direction: row-reverse;
-}
-br {
-    display: block;
-    margin: 45px 0;
-    line-height: 15px;
-    content: " ";
-}
-@keyframes fadein {
-    from {
-        bottom: 0;
-        opacity: 0;
-    }
-    to {
-        bottom: 3.5vh;
-        opacity: 1;
-    }
-
-}
-
-@font-face
-{
-    font-family: HeaderTextFont;
-    font-weight: 900;
-    src: url(DelaGothicOne-Regular.ttf);
+    text-align: right;
 }
 @font-face
 {
-    font-family: ParagraphTextFont;
-    src: url(Inter-Regular.ttf);
+    font-family: HeaderFont;
+    src: url(font/DelaGothicOne-Regular.ttf);
+}
+@font-face
+{
+    font-family: ParagraphFont;
+    src: url(font/Inter-Regular.ttf);
 }
 
-@media only screen and (max-width: 600px)
-{
+
+@media only screen and (max-width: 768px) {
+/*    PHONE    */
     .background-image {
-        background-size: 100vh;
-        background-repeat: repeat-y;
-    }
-    .top {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 30px;
+        background-size: cover;
     }
     .top img {
-        width: 170px;
+        width: 25vw;
     }
-    .align-everything {
-        display:inline-block;
-        zoom: 2;
-        padding-left: 2.4vw;
+    .dropdown {
+        font-size: 2.5vw;
+        margin: 0.5vw;
     }
-    .text h1 {
-        line-height: 20px;
+    #offers-menu {
+        position: absolute;
+        z-index: 1;
+        top: 14vw;
+        left: 0;
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+    }
+    #offers-menu li {
+        width: 100%;
+        margin: 4vw 0;
+    }
+    h1 {
+        font-size: 8vw;
+        line-height: 9vw;
+        padding: 1vw 0;
+    }
+    p {
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+    .offers {
+        padding: 10vw 7vw;
+        text-align: center;
+    }
+    .offers img {
+        width: 80vw;
+    }
+    .desktop-reverse {
+        display:block;
+    }
+    .row a img {
+        width: 4vw;
+    }
+    .copyright {
+        font-size: 2.5vw;
     }
     button {
-        margin-bottom: 2vw;
-    }
-    footer .social-media-links {
-        width: 20vw;
-        height: 5vw;
-        justify-content: space-between;
-        margin: 0.8vw 0 0.8vw 0;
-    }
-    nav {
-        margin: 10px;
-    }
-    nav a {
-        font-size: 20px;
-    }
-    br {
-        display: block;
-        margin: 15px 0;
-        line-height: 15px;
-        content: " ";
-    }
-    #dropDownOffers {
-        display: none;
-        position: absolute;
-        font-size: 18px;
-        background-color: rgba(0, 0, 0, 0.25);
-        left:30px;
-        width: 100%;
-        backdrop-filter: blur(20px);
-        padding: 15px;
-        top: 65px;
-        text-align: center;
-        border-radius: 0;
-    }
-    #dropDownOffers a {
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-    #dropDownOffers a:hover {
-        text-decoration: none;
-        color: #d8d6d6;
+        margin-bottom: 10vw;
     }
 }
