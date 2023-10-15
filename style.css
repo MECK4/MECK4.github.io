@@ -183,8 +183,7 @@ br {
     }
     .align-everything {
         display:inline-block;
-        -webkit-transform: scale(2);
-        transform: scale(2);
+        zoom: 2;
         padding-left: 2.4vw;
     }
     .text h1 {
