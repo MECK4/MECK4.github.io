@@ -54,6 +54,7 @@ nav a{
     display: inherit;
     cursor: pointer;
     font-size: 20px;
+    color: white;
 }
 #dropDownOffers a:hover {
     text-decoration: underline;
