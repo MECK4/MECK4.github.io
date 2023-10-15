@@ -184,7 +184,9 @@ br {
     .align-everything {
         display:inline-block;
         zoom: 2;
-        -ms-zom: 2;
+        -ms-zoom: 2;
+        -webkit-transform: scale(2);
+        transform: scale(1);
         padding-left: 2.4vw;
     }
     .text h1 {
