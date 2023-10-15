@@ -123,13 +123,20 @@ a img {
         padding: 10vw 6vw 15vw 6vw;
     }
 }
+
 @media only screen and (max-width: 768px) {
 /*    PHONE    */
     .background-image {
         background-size: cover;
     }
+    .top {
+        padding-bottom: 10vw;
+    }
     .top img {
-        width: 25vw;
+        width: 40vw;
+    }
+    .info {
+        padding-bottom: 15vw;
     }
     .dropdown {
         font-size: 2.5vw;
@@ -149,16 +156,16 @@ a img {
         margin: 4vw 0;
     }
     h1 {
-        font-size: 8vw;
+        font-size: 10vw;
         line-height: 9vw;
-        padding: 1vw 0;
+        padding: 5vw 0;
     }
     p {
-        font-size: 3vw;
+        font-size: 3.5vw;
         padding-top: 1vw;
     }
     .offers {
-        padding: 10vw 7vw;
+        padding: 15vw 7vw;
         text-align: center;
     }
     .offers img {
