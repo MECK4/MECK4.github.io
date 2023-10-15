@@ -1,0 +1,230 @@
+* {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y:visible;
+}
+.background-image {
+    position: fixed;
+    background: url(images/background-dam-website.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.top {
+    display: flex;
+    padding-left: 4.8vw;
+    padding-right: 4.8vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    justify-content: space-around;
+}
+.top img {
+    width: 25vw;
+    border-radius: 5px;
+}
+nav {
+    font-variant: small-caps;
+    margin-top: 15px;
+    color: white;
+    user-select: none;
+}
+nav a{
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#dropDownOffers {
+    display: none;
+    position: absolute;
+    translate: -55px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#dropDownOffers a {
+    display: inherit;
+    cursor: pointer;
+    font-size: 20px;
+}
+#dropDownOffers a:hover {
+    text-decoration: underline;
+}
+.align-everything {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    overflow-y: hidden;
+}
+.informations {
+    padding-top:6vw;
+    padding-bottom:6vw;
+}
+.text {
+    color: white;
+    width: 40vw;
+    overflow-y: hidden;
+}
+h1 {font-family: HeaderTextFont;}
+.text h1 {
+    margin:0;
+    font-size: 5vw;
+    line-height: 4.5vw;
+    overflow-y: hidden;
+    
+}
+.text p {
+    font-family: ParagraphTextFont;
+    font-size: 1.6vw;
+}
+
+.text button {
+    padding: 1.5vw 5vw 1.5vw 5vw;
+    border-radius: 120px;
+    border: 0;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+.text button:hover {
+    background-color: rgba(0,0,0, 0.5);
+}
+.image,
+.image img {
+    width: 45vw;
+    border-radius: 5px;
+}
+
+.packets{
+    width: 100%;
+    padding: 12vw 0 12vw 0;
+    background-color: rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(15px);
+}
+footer {
+    color: white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+footer .social-media-links {
+    display:inline-flex;
+    width: 20vw;
+    height: 3vw;
+    justify-content: space-between;
+    margin: 0.8vw 0 0.8vw 0;
+}
+footer .social-media-links a{
+    overflow: hidden;
+}
+footer .social-media-links img{
+    width: 3vw;
+    cursor: pointer;
+}
+footer .copyright-text {
+    font-size: 1.5vw;
+}
+
+.invert {
+    flex-direction: row-reverse;
+}
+br {
+    display: block;
+    margin: 45px 0;
+    line-height: 15px;
+    content: " ";
+}
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 3.5vh;
+        opacity: 1;
+    }
+
+}
+
+@font-face
+{
+    font-family: HeaderTextFont;
+    font-weight: 900;
+    src: url(fonts/DelaGothicOne-Regular.ttf);
+}
+@font-face
+{
+    font-family: ParagraphTextFont;
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+@media only screen and (max-width: 600px)
+{
+    .background-image {
+        background-size: 100vh;
+        background-repeat: repeat-y;
+    }
+    .top {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .top img {
+        width: 170px;
+    }
+    .align-everything {
+        display:inline-block;
+        zoom: 2;
+        padding-left: 2.4vw;
+    }
+    button {
+        margin-bottom: 2vw;
+    }
+    footer .social-media-links {
+        width: 20vw;
+        height: 5vw;
+        justify-content: space-between;
+        margin: 0.8vw 0 0.8vw 0;
+    }
+    nav {
+        margin: 10px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    br {
+        display: block;
+        margin: 15px 0;
+        line-height: 15px;
+        content: " ";
+    }
+    #dropDownOffers {
+        display: none;
+        position: absolute;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.25);
+        left:30px;
+        width: 100%;
+        backdrop-filter: blur(20px);
+        padding: 15px;
+        top: 65px;
+        text-align: center;
+        border-radius: 0;
+    }
+    #dropDownOffers a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #dropDownOffers a:hover {
+        text-decoration: none;
+        color: #d8d6d6;
+    }
+}
