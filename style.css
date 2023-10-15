@@ -109,7 +109,20 @@ a img {
     src: url(Inter-Regular.ttf);
 }
 
-
+@media only screen and (min-width: 1367px) {
+    h1 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 2vw
+    }
+    .info {
+        padding-bottom: 9vw;
+    }
+    .offers {
+        padding: 10vw 6vw 15vw 6vw;
+    }
+}
 @media only screen and (max-width: 768px) {
 /*    PHONE    */
     .background-image {
