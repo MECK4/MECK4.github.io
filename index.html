@@ -3,90 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="title_icon.svg" type="image/x-icon">
-    <title>DAM Agency | Marketing & Advertising Agency</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>DAM Agency | Marketing & Advertisement</title>
 </head>
 <body>
     <div class="background-image"></div>
-    <div class="top">
-        <img src="logo-nobg.png" alt="DAM Agency Logo">
-        <nav>
-            <a onclick="toggleDropDown()">Offers</a>
-            <div id="dropDownOffers">
-                <a href="website-creation.html">Website Creation</a>
-                <a href="social-media.html">Social Media</a>
-                <a href="online-ads.html">Online ADs</a>
+    <div class="container-fluid">
+        <div class="row top">
+            <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img src="images/logo-nobg.png" alt="DAM Agency Logo">
             </div>
-        </nav>
-    </div>
-    <section>
-        <div class="informations align-everything">
-            <div class="text">
-                <h1>DAM AGENCY</h1>
-                 <p>DAM Agency is an Marketing & Advertisement Agency that works with clients from all over the world.
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h1>DAM Agency</h1>
+                <p>DAM Agency is an Marketing & Advertisement Agency that works with clients from all over the world.
                     We help our clients with all their needs and grow their gross revenue.</p>
             </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
         </div>
-    </section>
-
-    <br>
-
-    <section>
-        <div class="packets align-everything">
-            <div class="text">
+        <br> <br><br><br><br><br><br><br>
+        <div class="row offers">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <h1>Website Creation</h1>
-                <p>We can create and manage your website completely.</p>
-                <button href="website-creation.html">Learn More</button>
+                <p>Create Website by Your Liking</p>
+                <button>Learn More</button>
             </div>
-            <div class="image">
-                <img src="website-creation-image.png" alt="Website Creation Image">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/website-creation-image.png" alt="Website Creation">
             </div>
         </div>
-    </section>
-
-    <br>
-
-    <section>
-        <div class="packets align-everything invert">
-            <div class="text">
+        <br>
+        <div class="row offers desktop-reverse">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <h1>Social Media</h1>
-                <p>We offer to manage your Social Media Pages and trough them bring you more clients.</p>
-                <button href="">Learn More</button>
+                <p>Manage ADs on Your Social Media Platforms</p>
+                <button>Learn More</button>
             </div>
-            <div class="image">
-                <img src="social-media-management.png" alt="Website Creation Image">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/social-media-management.png" alt="Social Media">
             </div>
         </div>
-    </section>
-
-    <br>
-
-    <section>
-        <div class="packets align-everything">
-            <div class="text">
+        <br>
+        <div class="row offers">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <h1>Online ADs</h1>
-                <p>We offer to handle and manage your Online ADs.</p>
-                <button href="">Learn More</button>
+                <p>Manage ADs on the Internet</p>
+                <button>Learn More</button>
             </div>
-            <div class="image">
-                <img src="online-ads-management.png" alt="Website Creation Image">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/online-ads-management.png" alt="Online ADs">
             </div>
         </div>
-    </section>
-
-    <section>
-        <footer class="align-everything">
-            <div class="social-media-links">
-                <a href="https://www.instagram.com/official.damagency" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=100089206284624&sk=about_contact_and_basic_info" target="_blank"><img src="facebook.png" alt="Instagram"></a>
-                <a onclick="copyEmail()" title="Copy Email Address" id="mail"><img src="mail.png" alt="Instagram"></a>
+        <br>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <a href="https://www.instagram.com/official.damagency" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100089206284624&sk=about_contact_and_basic_info" target="_blank"><img src="images/icons/facebook.png" alt="Instagram"></a>
+                <a onclick="copyEmail()" title="Copy Email Address" id="mail"><img src="images/icons/mail.png" alt="Instagram"></a>    
             </div>
-            <div class="copyright-text">
-                <p>DAM Agency © 2023-2024</p>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                 <p class="copyright">DAM Agency © 2023-2024</p>
             </div>
-        </footer>
-    </section>
+        </div>
+        <br>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
