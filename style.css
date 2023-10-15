@@ -8,7 +8,7 @@ body {
 }
 .background-image {
     position: fixed;
-    background: url(images/background-dam-website.jpg);
+    background: url(background-dam-website.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -158,12 +158,12 @@ br {
 {
     font-family: HeaderTextFont;
     font-weight: 900;
-    src: url(fonts/DelaGothicOne-Regular.ttf);
+    src: url(DelaGothicOne-Regular.ttf);
 }
 @font-face
 {
     font-family: ParagraphTextFont;
-    src: url(fonts/Inter-Regular.ttf);
+    src: url(Inter-Regular.ttf);
 }
 
 @media only screen and (max-width: 600px)
