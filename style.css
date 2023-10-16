@@ -47,7 +47,7 @@ p{
     overflow: hidden;
 }
 button {
-    background-color: rgba(0, 0, 0, 0.27);
+    background-color: rgba(0, 0, 0, 0.267);
     border: 0;
     padding: 1.5vw 4vw;
     font-size: 1.5vw;
@@ -59,7 +59,7 @@ button:hover {
     background-color: rgba(0,0,0,0.5);
 }
 .offers img{
-    width: 50vw;
+    width: 42vw;
 }
 
 a img {
@@ -120,7 +120,16 @@ a img {
         padding-bottom: 9vw;
     }
     .offers {
-        padding: 10vw 6vw 15vw 6vw;
+        padding: 10vw 1vw 20vw 1vw;
+    }
+    .offers img {
+        width: 47vw;
+    }
+    .copyright {
+        font-size: 1.3vw;
+    }
+    a img {
+        width: 2vw;
     }
 }
 
