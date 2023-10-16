@@ -5,7 +5,7 @@
 .background-image {
     position: fixed;
     background-image: url(background-dam-website.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
     width: 100vw;
@@ -18,20 +18,23 @@
 .top img {
     width: 25vw;
 }
+.info {
+    padding-bottom: 10vw;
+    width: 30%;
+    margin: auto;
+    text-align: justify;
+}
 h1{
     font-family: HeaderFont;
-    font-size: 6vw;
+    font-size: 5.5vw;
     line-height: 6vw;
     overflow: hidden;
-    padding: 0 7vw;
 }
 p{
     font-family: ParagraphFont;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     overflow: hidden;
-    text-align: justify;
     margin-top: 3vw;
-    padding: 0 7vw;
     
 }
 
@@ -49,6 +52,34 @@ a img {
     text-align: right;
 }
 
+.offers
+{
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(10px);
+    padding: 15vw 3vw;
+    text-align: left;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.267);
+    border: 0;
+    padding: 1.5vw 4vw;
+    font-size: 1.5vw;
+    border-radius: 220px;
+    overflow: hidden;
+    margin-top: 2vw;
+}
+button:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.offers img{
+    width: 42vw;
+}
+.desktop-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
 @font-face {
     font-family: HeaderFont;
     src: url(DelaGothicOne-Regular.ttf);
@@ -63,14 +94,12 @@ a img {
     h1 {
         font-size: 5vw;
         line-height: 4.5vw;
-        padding: 0 11vw;
     }
     p {
         font-size: 1.2vw;
-        padding: 0 11vw;
     }
     .footer {
-        padding: 3.5vw 0 0 5vw;
+        padding: 1.5vw 0 0 5vw;
     }
     a img {
         width: 2.5vw;
@@ -83,21 +112,56 @@ a img {
 
 @media only screen and (max-width: 768px)
 {
-    
-    h1 {
-        padding: 0 20vw;
-        text-align: center;
+    .top {
+        width: 65%;
+        margin: auto;
+        padding-bottom: 5vw;
     }
-    p {
-        padding: 0 20vw;
-        text-align: center;
+    .top img {
+        width: 40vw;
+    }
+    .info {
+        padding:0;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 15vw;
+    }
+    .info h1 {
+        width: 100%;
+        padding:0;
+        font-size: 10vw;
+        line-height: 9vw;
+    }
+    .info p {
+        width: 100%;
+        font-size: 2vw;
+        padding:0;
     }
     .footer {
         display: block;
-        padding: 0 0 0 15vw;
+        padding: 0 0 0 0;
     }
     .copyright {
-        padding: 1.5vw 0 0 0;
         text-align: left;
+        font-size: 3.5vw;
+    }
+    .footer a img {
+        padding: 0;
+        width: 7vw;
+    }
+    .offers {
+        padding: 20vh 7vw 30vh 7vw;
+        text-align: center;
+    }
+    .offers img {
+        width: 80vw;
+    }
+    .desktop-reverse {
+        display:block;
+    }
+    button {
+        margin-bottom: 10vw;
+        padding: 3vw 10vw;
+        font-size: 4vw;
     }
 }
