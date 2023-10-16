@@ -1,0 +1,103 @@
+* {
+    color: white;
+    overflow-x: hidden;
+}
+.background-image {
+    position: fixed;
+    background-image: url(/images/background-dam-website.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 150vh;
+    z-index: -1;
+}
+.top {
+    padding-top: 2vw;
+}
+.top img {
+    width: 25vw;
+}
+h1{
+    font-family: HeaderFont;
+    font-size: 6vw;
+    line-height: 6vw;
+    overflow: hidden;
+    padding: 0 7vw;
+}
+p{
+    font-family: ParagraphFont;
+    font-size: 1.5vw;
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 3vw;
+    padding: 0 7vw;
+    
+}
+
+.footer {
+    padding: 1vw 5vw;
+}
+
+a img {
+    width: 3vw;
+    margin: 0 3vw;
+}
+.copyright {
+    margin:0;
+    padding-top: .2vw;
+    text-align: right;
+}
+
+@font-face {
+    font-family: HeaderFont;
+    src: url(/font/DelaGothicOne-Regular.ttf);
+}
+@font-face {
+    font-family: ParagraphFont;
+    src: url(/font/Inter-Regular.ttf);
+}
+
+@media only screen and (min-width: 1367px)
+{
+    h1 {
+        font-size: 5vw;
+        line-height: 4.5vw;
+        padding: 0 11vw;
+    }
+    p {
+        font-size: 1.2vw;
+        padding: 0 11vw;
+    }
+    .footer {
+        padding: 3.5vw 0 0 5vw;
+    }
+    a img {
+        width: 2.5vw;
+    }
+    .copyright {
+        font-size: 1.5vw;
+        padding:0 8vw;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    
+    h1 {
+        padding: 0 20vw;
+        text-align: center;
+    }
+    p {
+        padding: 0 20vw;
+        text-align: center;
+    }
+    .footer {
+        display: block;
+        padding: 0 0 0 15vw;
+    }
+    .copyright {
+        padding: 1.5vw 0 0 0;
+        text-align: left;
+    }
+}
