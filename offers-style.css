@@ -4,7 +4,7 @@
 }
 .background-image {
     position: fixed;
-    background-image: url(/images/background-dam-website.jpg);
+    background-image: url(background-dam-website.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
